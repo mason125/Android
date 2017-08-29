@@ -16,7 +16,7 @@ public class Celsius {
 
         return(value);
     }
-    
+
     public double Fahrenheit(double C)
     {
         //conversion constants

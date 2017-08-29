@@ -35,7 +35,7 @@
         android:layout_marginLeft="5dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/CBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -50,18 +50,18 @@
         app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/KBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/editText5"
+        app:layout_constraintRight_toRightOf="@+id/CBox"
         android:layout_marginTop="26dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/CBox"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText5"
+        app:layout_constraintLeft_toLeftOf="@+id/CBox"
         app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
@@ -85,8 +85,8 @@
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="21dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/editText5"
-        app:layout_constraintLeft_toRightOf="@+id/editText5"
+        app:layout_constraintTop_toTopOf="@+id/CBox"
+        app:layout_constraintLeft_toRightOf="@+id/CBox"
         android:layout_marginLeft="21dp"
         android:layout_marginTop="8dp" />
 
@@ -98,8 +98,8 @@
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="21dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/editText6"
-        app:layout_constraintLeft_toRightOf="@+id/editText6"
+        app:layout_constraintTop_toTopOf="@+id/KBox"
+        app:layout_constraintLeft_toRightOf="@+id/KBox"
         android:layout_marginLeft="21dp" />
 
     <TextView
@@ -125,7 +125,7 @@
         android:layout_marginEnd="83dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/KBox"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="83dp">
 

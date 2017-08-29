@@ -6,7 +6,7 @@ package com.whiteknight.monst.tempconverter;
 
 public class Kelvin {
 
-    public double F(double K){
+    public double Fahrenheit(double K){
 
         //conversion values
         final double subtract = 459.67;
@@ -17,7 +17,7 @@ public class Kelvin {
         return value;
     }
 
-    public double C(double K){
+    public double Celsius(double K){
 
         //conversion constant
         final double constant = 273.15;
