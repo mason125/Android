@@ -1,11 +1,12 @@
 package com.whiteknight.monst.tempconverter;
 
+import java.text.DecimalFormat;
+
 /**
  * Created by MONST on 8/29/2017.
  */
 
 public class Celsius {
-
     public double Kelvin(double C)
     {
         //conversion constant
@@ -13,19 +14,17 @@ public class Celsius {
 
         //conversion equation
         double value = C + convesion;
-
-        return(value);
+        return (Math.round(value*100.0)/100.0);
     }
 
     public double Fahrenheit(double C)
     {
         //conversion constants
         final double subtraction = 32;
-        final double multi = 5/9;
+        final double multi = 1.8;
 
         //conversion equation
-        double value = (C - subtraction) * multi;
-
-        return(value);
+        double value = (C * multi) + 32;
+        return (Math.round(value*100.0)/100.0);
     }
 }

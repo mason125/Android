@@ -7,22 +7,20 @@ package com.whiteknight.monst.tempconverter;
 public class Fahrenheit {
 
     //converstion constants
-    final double addition = 459.67;
-    final double multi = 5/9;
+    final double multi = 1.8;
 
     public double Kelvin(double F)
     {
 
         //actual conversion
-        double value = (F + addition) * multi;
-
-        return value;
+        double value = 273.15 + ((F - 32) / multi);
+        return (Math.round(value*100.0)/100.0);
     }
 
     public double Celsius(double F)
     {
         //conversion
-        double value = (F - 32) * multi;
-        return value;
+        double value = (F - 32) / multi;
+        return (Math.round(value*100.0)/100.0);
     }
 }

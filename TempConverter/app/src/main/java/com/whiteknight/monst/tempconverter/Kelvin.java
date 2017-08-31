@@ -9,12 +9,12 @@ public class Kelvin {
     public double Fahrenheit(double K){
 
         //conversion values
-        final double subtract = 459.67;
-        final double multi = 9/5;
+        final double constant = 273.15;
+        final double multi = 1.8;
 
         //conversion equation
-        double value = (K*multi) - subtract;
-        return value;
+        double value = ((K - constant) * multi) + 32;
+        return (Math.round(value*100.0)/100.0);
     }
 
     public double Celsius(double K){
@@ -24,7 +24,7 @@ public class Kelvin {
 
         //value holder for C
         double value = K - constant;
-        return value;
+        return (Math.round(value*100.0)/100.0);
     }
 }
 
